@@ -1,2 +1,2 @@
-# mosoteach-helper-crx
- mosoteach-helper-crx
+# Mosoteach Helper (CRX)
+The Chrome Extension of Mosoteach-Helper
