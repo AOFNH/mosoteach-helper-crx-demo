@@ -1,0 +1,112 @@
+
+/**
+ * Global variables
+ */
+:root{
+	/*box style*/
+	--box-shadow-primary: 3px 3px 4px 4px hsla(0, 0%, 0%, 0.2);
+	--box-margin-primary:  6px 10px 10px 10px;
+	--box-border-radius-primary: 6px;
+	--box-background-primary: rgba(250,250,250,0.6);
+	/*主界面比例分配*/
+	--height-header-primary: 23%;
+	--height-button-primary: 53%;
+	--height-footer-primary: 12%;
+	--height-about-primary: 12%;
+    /*options style */
+    --optionTxt-width: 50%;
+    --optionImg-width: 50%;
+    /*general variable*/
+    --mosoteach-color: #0BD;
+    --color-rgba: rgba(0,187,221, 0.7);
+}
+
+.content-center{
+    /*设置为伸缩容器*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*垂直居中*/
+    -webkit-box-align: center;/*旧版本*/
+    -moz-box-align: center;/*旧版本*/
+    -ms-flex-align: center;/*混合版本*/
+    -webkit-align-items: center;/*新版本*/
+    justify-content: center;
+    /*垂直居中*/
+    align-items: center;
+    /*水平居中*/
+    justify-content: center;
+}
+
+.box-css{
+    margin: var(--box-margin-primary);
+    background: var(--box-background-primary);
+    border-style: none;
+    border-radius: var(--box-border-radius-primary);
+    box-shadow: var(--box-shadow-primary);
+}
+
+/* main css */
+body{
+    margin: 0;
+    width: 280px;
+    height: 300px;
+    background: #eee;
+    border-radius: var(--box-border-radius-primary);
+    cursor: default;
+}
+
+#header{
+    height: var(--height-header-primary);
+    text-align: center;
+    
+    line-height: 100%;
+    font-weight: bold;
+}
+
+#name_item1{
+    color: #a6a6a6;
+}
+
+#button{
+    height: var(--height-button-primary);
+}
+
+#optionMenu{
+    /*opacity: 0.9;*/
+    display: block;
+}
+
+.menuTitle{
+    background: var(--color-rgba);
+    height: 30px;
+    color: #eee;
+    font-size: 14px;
+}
+
+.optionTxt{
+    width: var(--optionTxt-width);
+}
+
+.optionImg{
+    width: var(--optionImg-width);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+#footer{
+    height: var(--height-footer-primary);
+}
+
+#about{
+	height: var(--height-about-primary);
+}
+
+.aboutImg{
+	width: 50%;
+}
+

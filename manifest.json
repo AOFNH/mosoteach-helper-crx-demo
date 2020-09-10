@@ -1,0 +1,49 @@
+{
+	"manifest_version": 2,
+	"name": "MosoteachHelper",
+	"version": "1.31",
+	"description": "A Helper for mosoteach. ",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	// "browser_action": {
+	// 	"default_icon": "icon16.png",
+	// 	"default_title": "mosoteachHelper",
+	// 	"default_popup": "popup.html"
+	// },
+	"page_action": {
+		"default_icon": {
+			"16": "icon16.png"
+		},
+		"default_popup": "popup.html",
+		"default_title": "mosoteachHelper"
+	},
+	"background": {
+		"scripts": ["./static/jquery-3.4.1.min.js", "./assets/js/eventPage.js"],
+		"persistent": false
+	},
+	"content_scripts": [{
+		"matches": ["https://www.mosoteach.cn/web/index.php*"],
+		"css":[
+			"./static/layui/css/modules/layer/default/layer.css",
+			"./static/layui/css/layui.css"
+
+		],
+		"js": [	"./static/jquery-3.4.1.min.js",
+				"./assets/js/content.js",
+				"./static/layui/lay/modules/layer.js",
+				"./static/layui/layui.js"
+
+		]
+	}],
+
+	"permissions": [
+		"tabs",
+		"https://www.mosoteach.cn/web/index.php*",
+		"activeTab",
+		"storage",
+		"notifications"
+	]
+}
